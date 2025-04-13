@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('bg4.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: transparent;
+}
+
+.back_bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background: #111;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Corrected */
+  height: 25%;
+  width: 100%;
+  background-color: transparent;
+  padding-left: 40px;
+  border-radius: 10px;
+}
+
+.upper-container h1 {
+  color: white;
+  font-size: 64px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.lower-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  background-color: transparent;
+  gap: 20px;
+}
+
+.boxes {
+  background-color: #111111;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white; /* Ensure enough contrast with background */
+}
+
+.upper_box {
+  height: 20%;
+  width: 95%;
+  background-color: transparent;
+}
+
+.upper_box h1 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 7%;
+  padding-top: 4%;
+}
+
+.lower_box {
+  height: 70%;
+  width: 80%;
+  background-color: rgba(125, 120, 120, 0.10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(125, 120, 120, 0.10);
+  box-shadow: 0px 0px 10px 0px rgba(125, 120, 120, 0.50);
+}
+
+.lower_box p {
+  color: #FFA34E;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

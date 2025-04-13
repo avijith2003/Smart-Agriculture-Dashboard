@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="back_bg">
+            <div class="upper-container">
+                <h1>Sensor Data</h1>
+            </div>
+            <div class="lower-container">
+                <div class="boxes" id="box1">
+                    <div class="upper_box" id="up_b1">
+                        <h1>Temperature</h1>
+                    </div>
+                    <div class="lower_box" id="down_b1">
+                        <P>{{ temperature }}°</P>
+                    </div>
+                </div>
+                <div class="boxes" id="box2">
+                    <div class="upper_box" id="up_b2">
+                        <h1>Humidity</h1>
+                    </div>
+                    <div class="lower_box" id="down_b2">
+                        <P>{{  humidity }}%</P>
+                    </div>
+                </div>
+                <div class="boxes" id="box3">
+                    <div class="upper_box" id="up_b3">
+                        <h1>Soil Moisture</h1>
+                    </div>
+                    <div class="lower_box" id="down_b3">
+                        <P>{{ moisture }}%</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
